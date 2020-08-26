@@ -1,0 +1,44 @@
+
+pre {
+    background-color: $blue;
+    border: medium $blue;
+    border-radius: 0.3rem;
+    color: white;
+    padding: 1.25rem;
+}
+
+code{
+    font-weight: 800;
+    color: $blue;}
+
+body{
+    background-color: #dbcfa2;
+}
+
+h1, h2, h3, h4 {
+    color: $blue;
+
+}
+
+footer{
+    background-color: $blue;
+    color: white;
+}
+
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  .footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+.title{
+    font-family: 'Lobster', cursive;
+}
+
