@@ -20,7 +20,13 @@ class Content extends Component
 
         switch ($buttonName) {
             case 'example':
-                redirect()->route('crudwire');
+                redirect()->route('crudwire.user.index');
+                break;
+            case 'git':
+                redirect()->away('https://github.com/janmoo/crudwire');
+                break;
+            case 'packagist':
+                redirect()->away('https://packagist.org/packages/janmoo/crudwire');
                 break;
             default:
                 $this->activeButton = $buttonName;

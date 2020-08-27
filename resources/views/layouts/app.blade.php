@@ -1,24 +1,24 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <!-- Primary Meta Tags -->
-<title>Crudwire - User Crud interface for laravel</title>
-<meta name="title" content="Crudwire - User Crud interface for laravel">
-<meta name="description" content="Laravel Package, User Crud interface out of the box ">
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <!-- Primary Meta Tags -->
+    <title>Crudwire - User Crud interface for laravel</title>
+    <meta name="title" content="Crudwire - crud interface for users">
+    <meta name="description" content="Laravel Package, an interface to perform crud operations on users">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://crudwire.be/">
-<meta property="og:title" content="Crudwire - User Crud interface for laravel">
-<meta property="og:description" content="Laravel Package, User Crud interface out of the box ">
-<meta property="og:image" content="{{asset('img/crudwire.gif')}} ">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crudwire.be/">
+    <meta property="og:title" content="Crudwire - crud interface for users">
+    <meta property="og:description" content="Laravel Package, an interface to perform crud operations on users">
+    <meta property="og:image" content="{{asset('img/crudwire.gif')}} ">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://crudwire.be/">
-<meta property="twitter:title" content="Crudwire - User Crud interface for laravel">
-<meta property="twitter:description" content="Laravel Package, User Crud interface out of the box ">
-<meta property="twitter:image" content="{{asset('img/crudwire.gif')}} ">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://crudwire.be/">
+    <meta property="twitter:title" content="Crudwire - User Crud interface for laravel">
+    <meta property="twitter:description" content="Laravel Package, User Crud interface out of the box ">
+    <meta property="twitter:image" content="{{asset('img/crudwire.gif')}} ">
     <link rel="apple-touch-icon" sizes="57x57" href="{{asset('img/favicon/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{asset('img/favicon/apple-icon-60x60.png')}}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{asset('img/favicon/apple-icon-72x72.png')}}">
@@ -45,16 +45,15 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" data-turbolinks-track="true" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&display=swap" rel="stylesheet" defer>
 
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" data-turbolinks-track="true" defer>
     @livewireStyles
 </head>
 <body>
@@ -62,7 +61,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-primary shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}" style="color: white">
-                    {{ config('app.name', 'Laravel') }}
+                    Crudwire
                 </a>
 
 
